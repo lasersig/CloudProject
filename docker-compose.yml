@@ -1,7 +1,7 @@
-version: "3.7"
+version: "3"
 services:
   web:
-    build: .
+    build: ./site
     volumes:
       - ./site:/var/www/html
     ports: 
@@ -12,7 +12,7 @@ services:
     build: ./Database
     container_name: database
     volumes:
-      - ./db:/var/lib/mysql
+      - ./Database/db:/var/lib/mysql
     restart: always
     ports:
-      - "3306:3306"
+      - "3307:3306"
