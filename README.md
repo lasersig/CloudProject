@@ -1,6 +1,3 @@
-# **REPORT**
-
-
 ## **OVERVIEW**
 
 This project links 2 containers together, one is based on an image that contains a web server with PHP version 7.4 installed. The other container is based on a MySQL image that will manage our database.
