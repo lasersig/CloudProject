@@ -4,82 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Database Viewer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #b0e0e6;
-        }
-        .container {
-            width: 85%;
-            margin: 90px auto;
-            display: flex;
-            justify-content: space-between;
-            background-color:#dcdcdc;
-            padding: 90px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .data-container {
-            flex: 1;
-            margin-right: 20px;
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        table {
-            border-collapse: collapse;
-            width: 110%;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
-        }
-        th {
-            background-color: #b76e79;
-        }
-        tr:nth-child(even) {
-            background-color: #f0ffff;
-        }
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-        .form-container {
-            flex: 1;
-        }
-        .form-container h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .form-container form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .form-container input[type="text"],
-        .form-container input[type="number"] {
-            width: calc(100% - 16px);
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .form-container input[type="submit"] {
-            background-color: #b76e79;
-            color: black;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            width: 100%;
-        }
-        .form-container input[type="submit"]:hover {
-            background-color:#b76e79;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -87,7 +13,7 @@
             <h2>Student Database</h2>
             <table>
                 <tr>
-                    <th>Student id</th>
+                    <th>Student ID</th>
                     <th>Name</th>
                     <th>Age</th>
                     <th>CGPA</th>
