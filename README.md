@@ -43,11 +43,11 @@ We will be mounting a volume to the directory ./db which allows us to access dat
 ## **DOCKER-COMPOSE.YML**
 
 - services: These are the containers that make up the whole application. In this case, they are web and db.
-- build**:** This will build using the Dockerfile in the directory specified.
-- volumes**:** This will mount ./site directory to /var/www/html which allows us to access the PHP files and edit them while the containers are running. For the db service it allows us to access the database files on ./db
-- ports**:** For the web server we will be mapping port 8080 on the host machine to 80 on the docker container which is the default web server port. For the MySQL database, we will be mapping port 3307 on the host machine to port 3306 on the container which is the default MySQL port.
-- depends_on**:** This is used on the web service which ensures the db service runs first.
-- restart**:** Setting this on always which ensures the service restarts if it is stopped for any reason.
+- **build** This will build using the Dockerfile in the directory specified.
+- **volumes** This will mount ./site directory to /var/www/html which allows us to access the PHP files and edit them while the containers are running. For the db service it allows us to access the database files on ./db
+- **ports** For the web server we will be mapping port 8080 on the host machine to 80 on the docker container which is the default web server port. For the MySQL database, we will be mapping port 3307 on the host machine to port 3306 on the container which is the default MySQL port.
+- **depends_on** This is used on the web service which ensures the db service runs first.
+- **restart** Setting this on always which ensures the service restarts if it is stopped for any reason.
 
 ## **RUNNING APPLICATION**
 
