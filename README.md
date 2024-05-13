@@ -14,7 +14,7 @@ To be able to add functionality to the website, we have to create another PHP fi
 
 
 # DATABASE
-##Dockerfile
+## Dockerfile
 We will be using the latest mysql image and setting an environment variable  MYSQL_ROOT_PASSWORD to set up a root password. 
 We will be exposing the port 3306 as it is the default MySQL port. 
 The COPY command will allow the .sql script to be initialized when the container runs for the first time.
