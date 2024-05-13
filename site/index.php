@@ -10,15 +10,15 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background-color: #b0e0e6;
         }
         .container {
-            width: 90%;
-            margin: 20px auto;
+            width: 85%;
+            margin: 90px auto;
             display: flex;
             justify-content: space-between;
-            background-color: #fff;
-            padding: 20px;
+            background-color:#dcdcdc;
+            padding: 90px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -32,21 +32,21 @@
         }
         table {
             border-collapse: collapse;
-            width: 100%;
+            width: 110%;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 12px;
+            padding: 15px;
             text-align: left;
         }
         th {
-            background-color: #f2f2f2;
+            background-color: #b76e79;
         }
         tr:nth-child(even) {
-            background-color: #f9f9f9;
+            background-color: #f0ffff;
         }
         tr:hover {
-            background-color: #f2f2f2;
+            background-color: #f5f5f5;
         }
         .form-container {
             flex: 1;
@@ -68,8 +68,8 @@
             border-radius: 4px;
         }
         .form-container input[type="submit"] {
-            background-color: #4caf50;
-            color: white;
+            background-color: #b76e79;
+            color: black;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
@@ -77,7 +77,7 @@
             width: 100%;
         }
         .form-container input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color:#b76e79;
         }
     </style>
 </head>
@@ -87,7 +87,7 @@
             <h2>Student Database</h2>
             <table>
                 <tr>
-                    <th>Student ID</th>
+                    <th>Student id</th>
                     <th>Name</th>
                     <th>Age</th>
                     <th>CGPA</th>
